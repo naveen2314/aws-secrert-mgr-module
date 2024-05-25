@@ -1,4 +1,4 @@
-module "secrets-manager" {
+module "secrets_manager" {
   source  = "terraform-aws-modules/secrets-manager/aws"
   version = "1.1.2"
 

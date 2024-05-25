@@ -1,9 +1,9 @@
 output "secret_arn" {
   description = "The ARN of the created secret"
-  value       = module.secrets_manager.this_secretsmanager_secret_arn
+  value       = module.secrets_manager.secret_arn
 }
 
-output "secret_name" {
+output "secret_id" {
   description = "The name of the created secret"
-  value       = module.secrets_manager.this_secretsmanager_secret_name
+  value       = module.secrets_manager.secret_id
 }
