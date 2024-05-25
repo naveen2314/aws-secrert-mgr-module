@@ -107,11 +107,11 @@ variable "recovery_window_in_days" {
 #   default     = false
 # }
 
-# variable "secret_string" {
-#   description = "Specifies text data that you want to encrypt and store in this version of the secret. This is required if `secret_binary` is not set"
-#   type        = string
-#   default     = null
-# }
+variable "secret_string" {
+  description = "Specifies text data that you want to encrypt and store in this version of the secret. This is required if `secret_binary` is not set"
+  type        = string
+  default     = null
+}
 
 # variable "secret_binary" {
 #   description = "Specifies binary data that you want to encrypt and store in this version of the secret. This is required if `secret_string` is not set. Needs to be encoded to base64"
